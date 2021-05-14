@@ -10,7 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Generator',            
+      title: 'Generator',
+      theme: ThemeData(          // Add the 3 lines from here... 
+        primaryColor: Colors.white,
+      ),                 
       home: RandomWords(),
     );
   }
